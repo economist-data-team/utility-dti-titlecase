@@ -11,11 +11,6 @@ before_install:
 script:
 - npm t
 after_success: travis-after-all && npm run semantic-release
-deploy:
-  provider: npm
-  skip_cleanup: true
-  on:
-    repo: economist-data-team/
 env:
   global:
   - secure: bgKlbPOmmOp9s7kdO55B/ILqL1yMbBAs6dSx/SfvcUA6i1n3A+JL/9X2kYI0yLe0A39L59MmxsnWntTar6WPwAvtIqxgSSQN8S+3XtOfZ7uykzi5TVIbdEnRhfQrHMWxwB1HsnCx/n/0lgqknxak6pKFqnS3NOseaZ+/lcaFQYSfECiOBYYEqgbwv4IsdLhQf9MoGL/yiaOaqyJGPk/71EK4i6kJTDGNET2A6Nw0E4M4zwQ2z5RJxzkLGHtdU8B0RP1PhM42duvOh2LnzWhCtiglrNIO1dXpe/v29pKFekruXAC6iXLt13TzBXhNI1qCsM/VDDwPE+B6OM0n7utvVBN/hJgI230eVaWveDK/v2Gd/pEDxeg2X24Sqv0MSlNUciEJNYTDHcQ4TskhwWu7YxbbskM6xA6Q7SBggi48s0pHVM8gzBLparZEa2qFU31L8zbijo7ahX1/SNHrnjt/teNNQ+AZYJPaHQIFZifLOFFt8biHKNdrwMIfqvSG9FsmQgODVlFxWHl/528LPRMJqyUnVy7V6bPymVTn+3q8INHzKP14oW7i/cFthBvFDzCMlpU9rxSAmPT0HY8wDXRciOaoST2ohaGgVUNM3QV4wTm3DnoQXE1WqmmDGJMRfzhotTj3/T8s6BUWrv11rg8gKceAfIaKgdEOmtxabQVavQ8=
